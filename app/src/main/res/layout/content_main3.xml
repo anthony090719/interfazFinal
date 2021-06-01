@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    tools:showIn="@layout/activity_main3">
+
+    <ImageView
+        android:id="@+id/categoria"
+        android:layout_width="100dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="68dp"
+        android:text="Categoria"
+        app:layout_constraintBottom_toTopOf="@+id/pagos"
+        app:layout_constraintEnd_toStartOf="@+id/contenido"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/categoria" />
+
+    <ImageView
+        android:id="@+id/contenido"
+        android:layout_width="111dp"
+        android:layout_height="103dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="68dp"
+        android:text="Contenido"
+        app:layout_constraintBottom_toTopOf="@+id/tarifas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/contenido" />
+
+    <ImageView
+        android:id="@+id/pagos"
+        android:layout_width="105dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="100dp"
+        android:text="Pagos"
+        app:layout_constraintBottom_toTopOf="@+id/cliente"
+        app:layout_constraintEnd_toStartOf="@+id/tarifas"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pagos" />
+
+    <ImageView
+        android:id="@+id/tarifas"
+        android:layout_width="108dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="104dp"
+        android:text="Tarifas"
+        app:layout_constraintBottom_toTopOf="@+id/generos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/planes" />
+
+    <ImageView
+        android:id="@+id/cliente"
+        android:layout_width="105dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Cliente"
+        app:layout_constraintEnd_toStartOf="@+id/generos"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cliente" />
+
+    <ImageView
+        android:id="@+id/generos"
+        android:layout_width="107dp"
+        android:layout_height="101dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Generos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/generos" />
+
+    <Button
+        android:id="@+id/lcategorias"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Lista Categorias"
+        app:layout_constraintEnd_toStartOf="@+id/lcontenidos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenido" />
+
+    <Button
+        android:id="@+id/lcontenidos"
+        android:layout_width="163dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Lista Contenidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenido" />
+
+    <Button
+        android:id="@+id/lpagos"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:text="Lista Pagos"
+        app:layout_constraintEnd_toStartOf="@+id/ltarifas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagos" />
+
+    <Button
+        android:id="@+id/ltarifas"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Lista Tarifas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarifas" />
+
+    <Button
+        android:id="@+id/lclientes"
+        android:layout_width="161dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="108dp"
+        android:text="Lista Clientes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lgeneros"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/lgeneros"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="108dp"
+        android:text="Lista Generos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
